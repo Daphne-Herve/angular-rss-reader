@@ -1,19 +1,12 @@
-<p>news works!</p>
-<!-- <div>
+<div>
   <div>
     <div>
-      <div *ngIf="RssData">
-        <span>Treading {{ RssData.rss.channel[0].title[0] }} News</span>
-        <div *ngFor="let o of RssData.rss.channel[0].item">
-          <div>
-            <span>{{ o.title[0] }}</span>
-            <span>
-              Le Monde: A la une <span class="dot"> </span>
-              {{ getDataDiff(o.pubDate) }}</span
-            >
-          </div>
+      <div *ngIf="response">
+        <div *ngFor="let response of response.items">
+          <h3> {{ response.title }} </h3>
+          <p> {{ response.description }} </p>
+          <img src={{response.enclosure.link}} alt="image de l'article">
         </div>
-      </div>
     </div>
   </div>
-</div> -->
+</div>
