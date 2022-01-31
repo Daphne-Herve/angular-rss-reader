@@ -7,5 +7,11 @@ import { NewsRss } from './NewsRss';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-rss-reader';
+  isconnected : boolean = false;
+  title = 'News Reader';
+
+
+  connect() {
+    this.isconnected = true;
+  }
 }

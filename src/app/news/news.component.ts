@@ -36,6 +36,14 @@ export class NewsComponent implements OnInit {
       console.log("response", data);
   })
   }
+
+// <ul class="etiquette">
+//   <li *ngFor="let etiquette of etiquettes">
+//     <a routerLink="/detail/{{etiquette.id}}">
+//       <span class="badge">{{etiquette.id}}</span> {{etiquette.name}}
+//     </a>
+//   </li>
+// </ul>
 }
 
 

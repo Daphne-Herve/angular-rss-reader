@@ -1,2 +1,14 @@
-<h1>News app</h1>
-<app-news></app-news>
+
+<div class="title-block">
+  <h1>{{title}}</h1>
+</div>
+ <app-wrapper>
+  <nav>
+    <!-- <a routerLink="/news" (click)="connect()">Me connecter</a> -->
+    <!-- <div *ngIf="isconnected"><a routerLink="/news">Actus</a></div> -->
+
+  </nav>
+  <router-outlet></router-outlet>
+</app-wrapper>
+
+<app-nav-menu></app-nav-menu>

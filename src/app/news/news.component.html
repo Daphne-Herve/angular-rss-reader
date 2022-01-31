@@ -1,11 +1,16 @@
-<div>
+<div class="news-container">
   <div>
     <div>
       <div *ngIf="response">
         <div *ngFor="let response of response.items">
-          <h3> {{ response.title }} </h3>
-          <p> {{ response.description }} </p>
-          <img src={{response.enclosure.link}} alt="image de l'article">
+          <div class="card">
+            <a href={{response.link}}>
+              <img src={{response.enclosure.link}} alt="image de l'article">
+              <h3> {{ response.title }} </h3>
+              <p> {{ response.description }} </p>
+            </a>
+          </div>
+          <app-news-actions></app-news-actions>
         </div>
     </div>
   </div>

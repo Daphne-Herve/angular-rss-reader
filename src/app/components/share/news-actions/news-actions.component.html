@@ -1,0 +1,7 @@
+<div>
+  <button (click)="select()">
+    <img *ngIf="!selected; else elseBlock" src="../../../../assets/images/favoris-heart.png" alt="">
+    <ng-template #elseBlock><img src="../../../../assets/images/favorite-heart-fill.png" alt=""></ng-template>
+  </button>
+  <button><img src="../../../../assets/images/icon-share.png" alt=""></button>
+</div>
